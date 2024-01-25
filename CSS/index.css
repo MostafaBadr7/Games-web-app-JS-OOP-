@@ -1,0 +1,316 @@
+/*
+ * Route - Frontend
+ * JS program Week 11
+ * Game web app (OOP)
+ * (JS + Bootstrap + AJAX + APIs)"OOP"
+ * 13/01/2024
+ * Index page CSS
+ * Mostafa Badr >> LinkedIn: https://www.linkedin.com/in/mostafa-badr-610b64208
+ * Mostafa Badr >> GitHub: https://github.com/MostafaBadr7
+ */
+
+/* Import other CSS files*/
+/* <!----------------------------- Bootstrap ----------------------------------> */
+@import url(./bootstrap.min.css);
+/* <!--------------------------- font awesome ---------------------------------> */
+@import url(./all.min.css);
+
+/* Global */
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --color-hue: 0%;
+  --color-sat: 100%;
+  --color-light: 50%;
+  --main-color: rgb(34, 0, 20);
+  --nav-back-color: #fd49a0;
+  /* --nav-back-color: #5a042e; */
+  --letter-color: #176408;
+  --navi-item-color: rgb(34, 0, 20);
+  --card-back-color: rgba(0, 0, 0, 0.933);
+  --sec-color: hsl(var(--color-hue), var(--color-sat), var(--color-light));
+}
+body {
+  /* background-color: #fff;
+  background-image: url(../Images/istockphoto-1227598160-612x612.jpg);
+  background-position: center center;
+  background-repeat: repeat; */
+  background-color: var(--main-color);
+}
+/* ................. You can change the main color from here .....................*/
+.custom-danger {
+  background-color: var(--main-color);
+}
+
+/* <!-->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> HEADER <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< --> */
+header {
+  background-color: var(--nav-back-color) !important;
+}
+.games {
+  margin-left: 3px;
+  width: fit-content;
+  margin-bottom: 0;
+  cursor: pointer !important;
+  background-color: var(--nav-back-color);
+}
+.games-content {
+  width: 82%;
+  padding-top: 0;
+}
+.games-word {
+  position: relative !important;
+  top: 50px;
+  left: 30px !important;
+  color: #a4b3b6 !important;
+  letter-spacing: 8px;
+}
+.review {
+  color: #a4b3b6 !important;
+  margin-top: 5px !important;
+  margin-bottom: 0px !important;
+  margin-left: 60px !important;
+  font-weight: 800 !important;
+}
+.review div {
+  font-weight: 800 !important;
+}
+.search-bar-area {
+  background-image: url(../Images/e-sports-winner-trophy-standing-stage.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+.G {
+  color: var(--letter-color);
+  font-weight: 900;
+}
+.logo {
+  width: 40px;
+}
+/* <!-->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> NAV <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< --> */
+.box-div-left {
+  /* width: 125px !important; */
+  border-top: 50px var(--nav-back-color) solid;
+  border-right: 30px var(--nav-back-color) solid;
+  background-color: #fd40;
+  /* border-top-right-radius: 100%; */
+  /* box-shadow: -13px -20px 5px 15px var(--nav-back-color); */
+}
+
+.box-div-right {
+  /* width: 125px !important; */
+  /* height: 100px; */
+  border-left: 30px var(--nav-back-color) solid;
+  border-top: 50px var(--nav-back-color) solid;
+  background-color: #fd40;
+  /* border-top-left-radius: 100%; */
+  /* box-shadow: 10px -20px 5px 15px var(--nav-back-color); */
+}
+nav {
+  top: 50px !important;
+}
+
+.active {
+  background: linear-gradient(to left, white 50%, var(--navi-item-color) 50%)
+    right;
+  color: black !important;
+  background-size: 200%;
+  transition: 1.5s ease-out !important;
+}
+.categories-nav-item:hover {
+  background-color: #760f7a !important;
+}
+.categories-nav-item {
+  background-color: var(--navi-item-color) !important;
+  transition: background-color 0.1s ease-in-out;
+  /* color: var(--nav-back-color) !important; */
+}
+.shooter {
+  padding-inline: 35px !important;
+}
+/* <!-->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> SEARCH <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< --> */
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400");
+@import url("https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Roboto:wght@100;300;400;500;700;900&family=Satisfy&display=swap");
+/*  CSS reset start */
+.search-input,
+.search-btn {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  border-radius: 0;
+  vertical-align: top;
+} /* CSS reset end */
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* h1 {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 4rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 200;
+  margin-bottom: 3%;
+} */
+.search-btn {
+  text-align: center;
+  border: none;
+  height: 50px;
+  width: 70px;
+  background: white;
+  border-radius: 0 35px 35px 0;
+  color: #fd49a0;
+  font-size: 1.4rem;
+  transition: color 0.1s ease-in-out;
+}
+.search-btn:hover {
+  color: black;
+}
+.search-input {
+  border: none;
+  height: 50px;
+  width: 600px;
+  outline: none;
+  margin-bottom: 20%;
+  padding-left: 40px;
+  border-radius: 35px 0 0 35px;
+  color: rgb(110, 110, 110);
+  font-size: 1.6rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 200;
+  text-align: center;
+}
+.p-norm-white,
+a {
+  color: white;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  text-decoration: none;
+  /* font-family: "Grape Nuts", cursive;
+  font-family: "Roboto", sans-serif;
+  font-family: "Satisfy", cursive; */
+}
+/* <!-->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> CARDS <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< --> */
+.card {
+  flex: 1 0 auto;
+  box-shadow: 0px 0px 20px 5px rgba(82, 78, 78, 0.333);
+  /* background-color: rgb(198, 144, 144) !important; */
+  background-color: var(--card-back-color) !important;
+  /* font-family: "Grape Nuts", cursive;
+  font-family: "Roboto", sans-serif;
+  font-family: "Satisfy", cursive; */
+}
+.one-card {
+  transition: transform 0.5s, filter 0.3s;
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
+  filter: grayscale();
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+.one-card:hover {
+  /* transform: scale(1.05, 1.05); */
+  filter: none;
+}
+.one-card:hover .card {
+  /* transform: scale(1.05, 1.05); */
+  box-shadow: 0px 0px 50px 1px rgba(82, 78, 78, 0.1);
+}
+.card-details-btn:hover {
+  color: white !important ;
+}
+
+/* <!-->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> LOADER <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< --> */
+.loader {
+  transform: rotateZ(45deg);
+  perspective: 1000px;
+  border-radius: 50%;
+  width: 198px;
+  height: 198px;
+  color: purple;
+}
+.loader:before,
+.loader:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: inherit;
+  height: inherit;
+  border-radius: 50%;
+  transform: rotateX(70deg);
+  animation: 1s spin linear infinite;
+}
+.loader:after {
+  color: #ff3d00 !important;
+  transform: rotateY(70deg);
+  animation-delay: 0.4s;
+}
+
+@keyframes rotate {
+  0% {
+    transform: translate(-50%, -50%) rotateZ(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotateZ(360deg);
+  }
+}
+
+@keyframes rotateccw {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+
+@keyframes spin {
+  0%,
+  100% {
+    box-shadow: 0.2em 0px 0 0px currentcolor;
+  }
+  12% {
+    box-shadow: 0.2em 0.2em 0 0 currentcolor;
+  }
+  25% {
+    box-shadow: 0 0.2em 0 0px currentcolor;
+  }
+  37% {
+    box-shadow: -0.2em 0.2em 0 0 currentcolor;
+  }
+  50% {
+    box-shadow: -0.2em 0 0 0 currentcolor;
+  }
+  62% {
+    box-shadow: -0.2em -0.2em 0 0 currentcolor;
+  }
+  75% {
+    box-shadow: 0px -0.2em 0 0 currentcolor;
+  }
+  87% {
+    box-shadow: 0.2em -0.2em 0 0 currentcolor;
+  }
+}
+.loading-layer {
+  background-color: #000;
+}
+
+/* <!-->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Game Details Layer <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< --> */
+.details-layer {
+  min-height: 100%;
+}
+.special-font {
+  font-family: "Grape Nuts", cursive;
+  font-family: "Roboto", sans-serif;
+  font-family: "Satisfy", cursive;
+}

@@ -1,0 +1,161 @@
+<!--  
+ * Route - Frontend
+ * JS program Week 11
+ * Game web app (OOP)
+ * (JS + Bootstrap + AJAX + APIs)"OOP"
+ * 13/01/2024
+ * Index home page HTML
+ * Mostafa Badr >> LinkedIn: https://www.linkedin.com/in/mostafa-badr-610b64208
+ * Mostafa Badr >> GitHub: https://github.com/MostafaBadr7
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Games Reviews</title>
+    <link rel="icon" type="image/x-icon"  href="./Images/icons8-playstation-buttons-48.png">
+    <!-- One External stylesheet includes import function of others css files -->
+    <link rel="stylesheet" href="./CSS/index.css" />
+    <link rel="stylesheet" href="./CSS/media.css" />
+  </head>
+  <body >
+      <!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Loading Layer >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+<section class="loading-layer position-fixed top-0 start-0 end-0 bottom-0 opacity-75 z-3 d-flex justify-content-center align-items-center vh-100">
+  <div class="loader m-auto"></div>
+</section>
+      <!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Header >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+<header class="box-section ">
+    <div class="w-100">
+        <div class="games d-flex "
+        >
+        <!-- <div class="logo  d-flex align-items-end"><img class="w-100 img-fluid" src="./Images/icons8-playstation-buttons-48.png" alt=""></div> -->
+          <h1 class="games-word "
+        >
+          <span class="G">G</span>ame
+        </h1>
+        </div></span
+      >
+    </div>
+    <div
+      class="games-content m-auto border border-warning border-top-0 border-bottom-0 border-3 "
+    >
+</header>
+      <!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Nav >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+<nav class="categories-nav fixed-bottom  z-1 end-0 top-0 d-flex  align-items-center ">
+  <div>
+    <ul class="nav-part1  list-unstyled ps-2 d-flex flex-column justify-content-between align-items-center h-25">
+      <a data-category="shooter" class="categories-nav-item shooter rounded-2  px-4 text-decoration-none text-white" href=""><li>Shooter</li></a>
+      <a data-category="mmorpg" class="categories-nav-item rounded-2  px-4 text-decoration-none text-white" href=""><li>Mmorpg</li></a>
+      <a data-category="sailing" class="categories-nav-item rounded-2  px-4 text-decoration-none text-white" href=""><li>Sailing</li></a>
+    </ul>
+  </div>
+  <div class="nav-part2 ms-auto">
+    <ul class=" list-unstyled pe-2 d-flex flex-column justify-content-between align-items-center h-25">
+      <a data-category="permadeath" class="categories-nav-item rounded-2  pe-4 ps-3 text-decoration-none text-white" href=""><li>Permadeath</li></a>
+      <a data-category="superhero" class="categories-nav-item rounded-2  pe-4 ps-2 text-decoration-none text-white" href=""><li>Superhero</li></a>
+      <a data-category="pixel" class="categories-nav-item pixel rounded-2  px-4 ps-4 me-4 text-decoration-none text-white" href=""><li>Pixel</li></a>
+    </ul>
+  </div>
+</nav>
+      <!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Mobile Nav >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+<nav class="navbar d-none bg-body-tertiary fixed-top ">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">GameReviews</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">GameReviews</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="m-auto mb-2"><a data-category="shooter" class="categories-nav-item rounded-2   text-decoration-none text-dark" href="">Shooter</a></li>
+                <li class="m-auto mb-2"><a data-category="mmorpg" class="categories-nav-item rounded-2   text-decoration-none text-dark" href="">Mmorpg</a></li>
+                <li class="m-auto mb-2"><a data-category="sailing" class="categories-nav-item rounded-2   text-decoration-none text-dark" href="">Sailing</a></li>
+                <li class="m-auto mb-2"><a data-category="permadeath" class="categories-nav-item rounded-2  text-decoration-none text-dark" href="">Permadeath</a></li>
+                <li class="m-auto mb-2"><a data-category="superhero" class="categories-nav-item rounded-2   text-decoration-none text-dark" href="">Superhero</a></li>
+                <li class="m-auto mb-2"><a data-category="pixel" class="categories-nav-item  rounded-2    text-decoration-none text-dark" href="">Pixel</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+      <!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Games Section >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+<section class="box-section   row col-12 g-0 h-100">
+        <!---------------------------------- left side Bar --------------------------------->
+  <div class="box-div-left  col-1"></div>
+      <!---------------------------------- Display Games Area --------------------------------->
+  <div class="d-flex flex-column  col-10">
+    <!--------------------------------------- Review Word --------------------------------->
+    <div class="search-bar-area d-flex justify-content-between  align-items-center">
+      <div class="review ms-2 d-flex flex-column fs-2 mt-3 justify-content-center  text-secondary text-center  align-self-start">
+      <div class="m-0  pb-0  p-0 R"><h2 >R</h2></div>
+      <div class="m-0  pb-0  p-0"><h5>e</h5></div>
+      <div class="m-0  pb-0  p-0"><h5>v</h5></div>
+      <div class="m-0  pb-0  p-0"><h5>i</h5></div>
+      <div class="m-0  pb-0  p-0"><h5>e</h5></div>
+      <div class="m-0  pb-0  p-0"><h5>w</h5></div>
+      <div class="m-0  pb-0  p-0"><h5>s</h5></div>
+      </div >
+      <!------------------------------------- Search Bar --------------------------------->
+      <div class="search m-auto sticky-top">
+<div>
+  <input class="search-input" type="text"><button class="search-btn" type="button">
+    <i class="fa fa-search" aria-hidden="true"></i>
+  </button>
+</div>
+      </div>
+    </div>
+    <!--------------------------------------- Games Cards --------------------------------->
+    <div class="displayDiv  z-2 d-flex flex-wrap justify-content-between mt-5 ">  
+    </div>
+ </div>
+         <!-------------------------------- Right side Bar --------------------------------->
+ <div class="box-div-right  col-1 m-0"></div>
+</section>
+  <!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Game Details Layer >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+<section >
+  <main>
+    <div class="details-layer pt-3 top-0 start-0 end-0 pb-5 bg-secondary position-absolute z-3 d-none ">
+              <!---------------------------------- X button --------------------------------->
+      <div class="x-icon "><button type="button" class="btn-close close-details-btn ms-4" aria-label="Close"></button>
+      </div>
+                    <!-------------------------- Details Figure --------------------------------->
+      <div class="row m-auto mt-5">
+      <figure class="col-12  m-auto mb-5 ">
+        <div id="carouselExample" class="carousel slide  ">
+          <div class="carousel-inner">
+          </div>
+          <button class="carousel-control-prev " type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon text-warning p-4 bg-black rounded-circle" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon p-4 bg-black rounded-circle" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </figure>
+      <figcaption class="game-info-details-layers col-12 pe-4">
+        <h1>Title: Phantasy Star Online 2 New Genesis
+        </h1>
+        <div class="d-flex flex-column justify-content-between">
+          <span class="my-2">Category</span>
+          <span class="mb-2">Platform</span>
+          <span class="mb-2">Status</span>
+        </div>
+        <p>The legacy of Phantasy Star Online 2 continues a thousand years later, as the next generation of ARKS operatives join forces with a race known as the Meteorn on the planet Halpha to defend against a new threat, The Dolls. Phantasy Star Online 2: New Genesis is an open world online RPG featuring a day-night cycles, weather effects, and a revamped battle system. It also introduces ways to travel no in the previous game, including gliding. All of this is built on a new graphics engine. Despite its differences from PSO2, the games are still connected, with players being able to move back and forth via the client. Players of the original can even bring characters already created in the original game, as well as certain items into New Genesis. For those who played the original game, New Genesis will be familiar in a lot of ways. The games have similar interfaces, quest types and other features. They both also share the same class types, and as with the original game, players will use Mags in combat. Players just entering the Phantasy Star Online 2 universe through New Genesis will also be able to take advantage of its relationship with the original game. The games share the same client and players can move between them and even collect gear from the original game to use in NGS.</p>
+        <button class="btn btn-danger mt-3"><a class="text-white text-decoration-none" href="">Website</a></button>
+      </figcaption>
+      </div>
+  </div>
+  </main>
+</section>
+    <!------------------------------ JS FILES---------------------------- -->
+    <script src="./JS/all.min.js"></script>
+    <script src="./JS/bootstrap.min.js"></script>
+    <script type="module" src="./JS/index.js"></script>
+  </body>
+</html>

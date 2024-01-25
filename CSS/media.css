@@ -1,0 +1,120 @@
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Media 1 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+@media screen and (max-width: 1150px) {
+  :root {
+    --color-hue: 0%;
+    --color-sat: 100%;
+    --color-light: 50%;
+    --main-color: rgb(34, 0, 20);
+    --nav-back-color: #fd49a0;
+    /* --nav-back-color: #5a042e; */
+    --letter-color: #176408;
+    --navi-item-color: rgb(34, 0, 20);
+    --card-back-color: rgba(0, 0, 0, 0.933);
+    --sec-color: hsl(var(--color-hue), var(--color-sat), var(--color-light));
+  }
+  .review {
+    margin-top: 35px !important;
+  }
+  .displayDiv {
+    justify-content: space-evenly !important;
+  }
+  .search-input {
+    width: 500px;
+  }
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Media 2 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+@media screen and (max-width: 900px) {
+  .search-input {
+    width: 300px;
+    margin-top: 10px;
+  }
+  .search-btn {
+    margin-top: 10px;
+  }
+  .review {
+    margin-left: 50px !important;
+    margin-top: 8px !important;
+    flex-direction: row !important;
+  }
+  .games-word {
+    left: 0px !important;
+    margin-right: 10px !important;
+  }
+  .card {
+    width: 18rem !important;
+  }
+  :root {
+    --card-back-color: rgba(0, 0, 0, 0.633);
+  }
+  .R {
+    font-size: 50px !important;
+  }
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Media 3 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+@media screen and (max-width: 650px) {
+  :root {
+    --letter-color: white !important;
+  }
+  .search-input {
+    width: 300px;
+  }
+  .search-bar-area {
+    flex-direction: column !important;
+  }
+  .review {
+    flex-direction: row !important;
+    margin-left: 65px !important;
+    color: white !important;
+  }
+  .games-word {
+    color: white !important;
+  }
+}
+@media screen and (max-width: 450px) {
+  .categories-nav {
+    display: none !important;
+  }
+  .categories-nav-item {
+    background-color: white !important;
+    padding: 5px;
+    margin: 5px !important;
+  }
+  .active {
+    background: linear-gradient(to left, var(--nav-back-color) 50%, white 50%)
+      right;
+    color: black !important;
+    background-size: 200%;
+    transition: 1.5s ease-out !important;
+  }
+  .navbar {
+    display: block !important;
+    padding-block: 0;
+  }
+  .navbar-toggler {
+    font-size: 10px;
+  }
+  .container-fluid {
+    background-color: #fd49a0;
+  }
+  .search-input {
+    width: 200px;
+    height: 30px;
+    margin-top: 25px;
+  }
+  .search-btn {
+    height: 30px;
+    margin-top: 25px;
+  }
+  .box-div-left,
+  .box-div-right {
+    display: none !important;
+  }
+  .box-section {
+    justify-content: center;
+  }
+  .games-word {
+    opacity: 0;
+  }
+}
